@@ -300,24 +300,91 @@ span .fab{
     .flexible-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-left: -50px;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    .heading{
+        margin-left: 20px;
+        padding: 0;
+    }
+    .title{
+        font-size: 16px;
+        justify-content: center;
     }
     .main-camera{
         order: 1;
+    }
+    .main-camera img{
+        width: 150%;
+        padding-left: 35%;
+    }
+    .section-title{
+        padding: 0;
     }
     .section-one{
         text-align: center;
         justify-content: center;
         width: 100%;
-        padding: 40px;
+        padding-left: 2%;
+        padding-bottom: 20%;
         order: 2;
     }
     .popular-collection-title{
         text-align: center;
+        padding-bottom: 2%;
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
         grid-row-gap: 15px;
+        margin-left: 2%;
     }
+    .product{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .see-more{
+        margin-left: 270px;
+    }
+
+    .sign-up-box{
+        padding-top: 10%;
+    }
+    .sign-up-box img{
+        width: 100%;
+    }
+
+    .inner-box{
+        width: 80%;
+        margin: 0;
+        padding: 1%;
+        padding-bottom: 5%;
+        padding-top: 0;
+        margin-left: 3%;
+        bottom: 5%;
+        left: 7%;
+    }
+    
+    .sign-up-box-button{
+        font-size: 10px;
+    }
+
+    .inner-box h2{
+        font-size: 16px;
+    }
+    input[type="text"]{
+        width: 40%;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+        font-size: 12px;
+        margin: 0;
+        padding: 10px 40px;
+    }
+    
 }
