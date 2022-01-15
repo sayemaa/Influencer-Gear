@@ -220,7 +220,7 @@ body{
     border-radius: 10px;
 }
 
-.sign-up-now-button a{
+.sign-up-button a{
     text-decoration: none;
     color: #E02C6D;
 }
@@ -291,6 +291,10 @@ span .fab{
         width: 100%;
     }
 
+    /*---------------
+        Section-1
+    -----------------*/
+
     .top-icons{
         display: none;
     }
@@ -338,6 +342,10 @@ span .fab{
         order: 2;
     }
 
+    /*------------------------
+        Popular Collection
+    --------------------------*/
+
     .popular-collection-title{
         text-align: center;
         padding-bottom: 2%;
@@ -358,6 +366,10 @@ span .fab{
     .see-more{
         margin-left: 270px;
     }
+
+    /*----------------
+        Sign-Up Box
+    ------------------*/
 
     .sign-up-box{
         padding-top: 10%;
@@ -380,7 +392,7 @@ span .fab{
         left: 7%;
     }
     
-    .sign-up-box-button{
+    .sign-up-button{
         font-size: 10px;
     }
 
@@ -409,7 +421,11 @@ span .fab{
     .container, .footer{
         width: 100%;
     }
-    
+
+    /*----------------
+        Section-1
+    ------------------*/
+
     .top-icons{
         display: none;
     }
@@ -456,6 +472,10 @@ span .fab{
         order: 2;
     }
 
+    /*-----------------------
+        Popular Collection
+    -------------------------*/
+
     .popular-collection-title{
         text-align: center;
         padding-bottom: 2%;
@@ -477,6 +497,10 @@ span .fab{
         margin-left: 650px;
     }
 
+    /*----------------
+        Sign-Up Box
+    ------------------*/
+
     .sign-up-box{
         padding-top: 10%;
     }
@@ -496,10 +520,6 @@ span .fab{
         left: 7%;
     }
     
-    .sign-up-box-button{
-        font-size: 10px;
-    }
-
     .inner-box h2{
         font-size: 24px;
     }
