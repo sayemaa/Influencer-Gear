@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    /* width: 1440px; */
+
     margin: 10px 10px;
     margin-bottom: 70px;
     padding: 0px 100px;
@@ -45,7 +45,7 @@ body{
 /*---- Main ----*/
 
 /*------------------
-     Section-one
+     Section-1
 --------------------*/
 
 .flexible-container{
@@ -80,12 +80,6 @@ body{
     font-size: 14px;
     padding: 10px 20px;
     border-radius: 41px;
-}
-
-.link-button:hover{
-    background-color: white;
-    color: #E02C6D;
-    border: 3px solid #E02C6D;
 }
 
 .fa-arrow-right{
@@ -203,7 +197,7 @@ body{
 }
 
 /*------------------------
-       Sign Up Box
+       Sign-Up Box
 --------------------------*/
 
 .sign-up-box{
@@ -213,6 +207,7 @@ body{
 .sign-up-box img{
     width: 100%;
     opacity: 0.9;
+    transform: translateY(1.5%);
 }
 
 .inner-box{
@@ -284,63 +279,77 @@ span .fab{
     padding-left: 5px;
 }
 
-/*------------------ 
-    Media Queries 
---------------------*/
 
-/*---- Mobile Devices ----*/
+/*---- Media Queries ----*/
+
+/*------------------- 
+    Mobile Devices 
+---------------------*/
 
 @media only screen and (max-width: 768px) {
-    .container, .sign-up-box, .footer{
+    .container, .footer{
         width: 100%;
     }
+
     .top-icons{
         display: none;
     }
+
     .flexible-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .container{
         margin: 0;
         padding: 0;
     }
+
     .heading{
         margin-left: 20px;
         padding: 0;
-    }
-    .title{
-        font-size: 16px;
         justify-content: center;
     }
+
+    .title{
+        font-size: 20px;
+    }
+
     .main-camera{
         order: 1;
     }
+
     .main-camera img{
-        width: 150%;
+        width: 130%;
         padding-left: 35%;
     }
+
     .section-title{
+        font-size: 38px;
         padding: 0;
     }
+
     .section-one{
         text-align: center;
         justify-content: center;
-        width: 95%;
-        padding-left: 2%;
+        width: 90%;
+        padding-left: 5%;
         padding-bottom: 20%;
         order: 2;
     }
+
     .popular-collection-title{
         text-align: center;
         padding-bottom: 2%;
     }
+
     .products{
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
-        grid-row-gap: 15px;
+        grid-row-gap: 40px;
         margin-left: 2%;
     }
+
     .product{
         flex-direction: column;
         align-items: center;
@@ -353,6 +362,125 @@ span .fab{
     .sign-up-box{
         padding-top: 10%;
     }
+
+    .sign-up-box img{
+        width: 100%;
+        transform: translateY(3%);
+
+    }
+
+    .inner-box{
+        width: 80%;
+        margin: 0;
+        padding: 1%;
+        padding-bottom: 5%;
+        padding-top: 0;
+        margin-left: 3%;
+        bottom: 3%;
+        left: 7%;
+    }
+    
+    .sign-up-box-button{
+        font-size: 10px;
+    }
+
+    .inner-box h2{
+        font-size: 16px;
+    }
+
+    input[type="text"]{
+        width: 85%;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+        font-size: 12px;
+        margin: 0;
+        padding: 10px 40px;
+    }
+}
+
+/*------------------- 
+    Tablet Devices 
+---------------------*/
+
+@media only screen and (min-width: 769px) and (max-width: 1400px) {
+    .container, .footer{
+        width: 100%;
+    }
+    
+    .top-icons{
+        display: none;
+    }
+
+    .flexible-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading{
+        margin-left: 20px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+
+    .main-camera{
+        order: 1;
+    }
+
+    .main-camera img{
+        width: 120%;
+        padding-left: 45%;
+    }
+
+    .section-title{
+        padding: 0;
+    }
+
+    .section-one{
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+        padding-left: 5%;
+        padding-bottom: 10%;
+        order: 2;
+    }
+
+    .popular-collection-title{
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        grid-row-gap: 40px;
+        margin: 4% 2%;
+    }
+
+    .product{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .see-more{
+        margin-left: 650px;
+    }
+
+    .sign-up-box{
+        padding-top: 10%;
+    }
+
     .sign-up-box img{
         width: 100%;
     }
@@ -364,7 +492,7 @@ span .fab{
         padding-bottom: 5%;
         padding-top: 0;
         margin-left: 3%;
-        bottom: 5%;
+        bottom: 20%;
         left: 7%;
     }
     
@@ -373,8 +501,9 @@ span .fab{
     }
 
     .inner-box h2{
-        font-size: 16px;
+        font-size: 24px;
     }
+
     input[type="text"]{
         width: 80%;
         padding: 12px;
@@ -382,9 +511,8 @@ span .fab{
     }
     
     input[type="submit"] {
-        font-size: 12px;
+        font-size: 15px;
         margin: 0;
         padding: 10px 40px;
     }
-    
 }
